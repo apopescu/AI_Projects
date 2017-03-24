@@ -1,7 +1,5 @@
 
-/*
-	Classe rappresentante la singola automobile
- */
+
 public class Car {
 	private int startPosX;
 	private int startPosY;

@@ -42,14 +42,14 @@ public class ParkingMain {
 		cars[5] = new Car(1, 2, 2, 2, true, false, redCarId);*/
 		
 	
-		/* easy B */
+		/* easy */
 		/*cars[0] = new Car(4, 0, 4, 2, false, false, 1);
 		cars[1] = new Car(3, 3, 3, 5, false, false, 2);
 		cars[2] = new Car(4, 5, 5, 5, true, false, 3);
 		cars[3] = new Car(0, 4, 2, 4, true, false, 4);
 		cars[4] = new Car(2, 2, 3, 2, true, false, redCarId);*/
 
-		/* medium C */
+		/* medium */
 		/*
 		cars[0] = new Car(2, 0, 2, 1, false, false, 1);
 		cars[1] = new Car(4, 0, 5, 0, true, false, 2);
@@ -58,7 +58,7 @@ public class ParkingMain {
 		cars[4] = new Car(4, 3, 5, 3, true, false, 5);
 		cars[5] = new Car(1, 2, 2, 2, true, false, redCarId);*/
 
-		/* hard A */
+		/* hard */
 		/*cars[0] = new Car(4, 0, 4, 2, false, false, 1);
 		cars[1] = new Car(5, 1, 5, 2, false, false, 2);
 		cars[2] = new Car(3, 4, 5, 4, true, false, 3);
@@ -66,7 +66,7 @@ public class ParkingMain {
 		cars[4] = new Car(2, 4, 2, 5, false, false, 5);
 		cars[5] = new Car(2, 2, 3, 2, true, false, redCarId);*/
 
-		/* hard D */
+		/* hard */
 		/*
 		cars[0] = new Car(4, 0, 4, 2, false, false, 1);
 		cars[1] = new Car(5, 1, 5, 2, false, false, 2);
@@ -75,7 +75,7 @@ public class ParkingMain {
 		cars[4] = new Car(1, 4, 1, 5, false, false, 5);
 		cars[5] = new Car(0, 2, 1, 2, true, false, redCarId);*/
 
-		/* hard E */
+		/* hard */
 		/*cars[0] = new Car(4, 0, 4, 2, false, false, 1);
 		cars[1] = new Car(5, 1, 5, 2, false, false, 2);
 		cars[2] = new Car(0, 0, 1, 0, true, false, 3);
@@ -83,7 +83,7 @@ public class ParkingMain {
 		cars[4] = new Car(2, 3, 2, 5, false, false, 5);
 		cars[5] = new Car(2, 2, 3, 2, true, false, redCarId);*/
 
-		/* very hard G*/
+		/* very hard */
 		cars[0] = new Car(0, 0, 1, 0, true, false, 1);
 		cars[1] = new Car(0, 1, 0, 3, false, false, 2);
 		cars[2] = new Car(0, 4, 0, 5, false, false, 3);
@@ -93,7 +93,7 @@ public class ParkingMain {
 		cars[6] = new Car(3, 1, 3, 3, false, false, 7);
 		cars[7] = new Car(1, 2, 2, 2, true, false, redCarId);
 		
-		/* very hard F */
+		/* very hard */
 		/*cars[0] = new Car(0, 0, 0, 1, false, false, 1);
 		cars[1] = new Car(3, 0, 5, 0, true, false, 2);
 		cars[2] = new Car(3, 1, 3, 2, false, false, 3);
