@@ -8,8 +8,6 @@ import aima.search.framework.SuccessorFunction;
 public class GlassSuccessorFunction implements SuccessorFunction {
 	public GlassSuccessorFunction() {}
 
-	/* Restituisce la lista degli stati successori a partire da uno dato e applicando
-		determinate azioni. */
 	public List getSuccessors(Object mState) {
 		List list = new ArrayList();
 
@@ -29,7 +27,6 @@ public class GlassSuccessorFunction implements SuccessorFunction {
 		return list;
 	}
 
-	/* Copia di un set di bicchieri */
 	public Glass[] clone(Glass[] glasses) {
 		Glass[] newGlasses = new Glass[glasses.length];
 

@@ -16,7 +16,7 @@ public class GlassState implements GoalTest, StepCostFunction, HeuristicFunction
 		return this.glasses;
 	}
 
-	/* Verifico se ho raggiunto lo stato finale/goal */
+	/* Check if mState is goal state */
 	public boolean isGoalState(Object mState) {
 		if(mState instanceof GlassState) {
 			GlassState state = (GlassState) mState;
@@ -52,8 +52,7 @@ public class GlassState implements GoalTest, StepCostFunction, HeuristicFunction
  	}
 
 
- 	/* Restituisce il valore dell'euristica, # bicchieri
- 	 	rivolti verso l'alto */
+ 	/* Number of up glasses */
  	public double getHeuristicValue(Object mState) {
 
 		if (mState instanceof GlassState) {
@@ -70,12 +69,12 @@ public class GlassState implements GoalTest, StepCostFunction, HeuristicFunction
  		else return Integer.MAX_VALUE;
 	}
 
-	/* Dalle specifiche la rotazione è sempre possibile. */
+	/* Rotation is always possible */
 	public boolean isRotatePossible(Glass[] glasses) {
 		return true;
 	}
 
-	/* Restituisce vero se il flipdown è possibile */
+	/* True if flipdown is possible */
 	public boolean isFlipDownPossible(Glass[] glasses) {
 		int upCounter = 0;
 
@@ -88,7 +87,7 @@ public class GlassState implements GoalTest, StepCostFunction, HeuristicFunction
 		else return false;
 	}
 
-	/* Ruota l'insieme di tutti i bicchieri */
+	/* Rotate glasses */
 	public GlassState rotate(Glass[] glasses) {
 		try {
 			for(int i=0; i<glasses.length; i++) {
@@ -117,7 +116,7 @@ public class GlassState implements GoalTest, StepCostFunction, HeuristicFunction
 		return null;
 	}
 
-	/* Flipdown di 2 bicchieri */
+	/* Flipdown action */
 	public GlassState flipdown(Glass[] glasses) {
 		try {
 			for(int i=0; i<glasses.length; i++) {
@@ -134,7 +133,7 @@ public class GlassState implements GoalTest, StepCostFunction, HeuristicFunction
 		return null;
 	}
 
-	/* Stampo a video la situazione dei bicchieri */
+	/* Print glasses state */
 	public void printGlasses(Glass[] glasses) {
 		int index = 0;
 		for(Glass glass : glasses) {

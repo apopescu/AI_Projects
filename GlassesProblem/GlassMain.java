@@ -13,7 +13,7 @@ public class GlassMain {
 
 		Glass[] glasses = new Glass[4];
 
-		/* Configurazione iniziale dei bicchieri */
+		/* Initial configuration of glasses */
 		glasses[0] = new Glass(1, 2, true, false);
 		glasses[1] = new Glass(2, 2, true, false);
 		glasses[2] = new Glass(2, 1, true, false);
@@ -30,10 +30,10 @@ public class GlassMain {
 										initState,
 										initState);
 
-			/* Strategia di ricerca */
+			/* Search strategy */
 			Search search = new AStarSearch(new GraphSearch());
 
-			/* Provvede a cercare la soluzione nello spazio degli stati */
+			/* Find a solution */
 			SearchAgent agent = new SearchAgent(problem, search);
 			printActions(agent.getActions());
 			printInstrumentation(agent.getInstrumentation());

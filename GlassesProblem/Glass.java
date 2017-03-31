@@ -1,6 +1,3 @@
-
-/* Classe rappresentante il singolo bicchiere */
-
 public class Glass {
 	private boolean up;
 	private boolean down;

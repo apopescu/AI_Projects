@@ -2,7 +2,7 @@
 
 echo "========= AI BASIC PROJECTS ========="
 echo "1: Glasses problem"
-echo "2: Rush Hours"
+echo "2: Rush Hour"
 echo "3: Sorting problem"
 echo "0: Exit"
 
