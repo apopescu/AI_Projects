@@ -8,10 +8,6 @@ import aima.search.framework.SuccessorFunction;
 public class SortSuccessorFunction implements SuccessorFunction {
 	public SortSuccessorFunction() {}
 
-	/* 	A partire da uno stato restituisce tutti i possibili successori 
-		Ogni successore rappresenta lo stato passato come parametro ma con uno
-		swap di 2 elementi.
-	*/
 	public List getSuccessors(Object mState) {
 		List list = new ArrayList();
 

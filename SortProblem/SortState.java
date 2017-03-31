@@ -16,10 +16,7 @@ public class SortState implements GoalTest, StepCostFunction, HeuristicFunction,
 		return this.array;
 	}
 
-	/* 
-	Verifica se è stato raggiunto lo stato goal,
-	cioè se il vettore è ordinato
-	*/
+	/* Check if mState contains an ordered array */
 	public boolean isGoalState(Object mState) {
 		if(mState instanceof SortState) {
 			SortState state = (SortState) mState;
@@ -39,9 +36,7 @@ public class SortState implements GoalTest, StepCostFunction, HeuristicFunction,
  	}
 
 
- 	/* Restituisce il valore dell'euristica */
- 	/* Questa euristica è ammissibile e consistente, quindi
- 	A* fornisce la soluzione ottimale */
+ 	/* Number of integers out of place */
  	public double getHeuristicValue(Object mState) {
 
 		if (mState instanceof SortState) {
@@ -49,7 +44,6 @@ public class SortState implements GoalTest, StepCostFunction, HeuristicFunction,
 			int fuoriPosto = 0;
  			int[] arrayH = state.array.clone();
 
- 			/* Calcolo il numero di interi fuori posto */
  			for(int i=0; i<arrayH.length; i++) {
  				boolean found = false;
  				if(i == arrayH.length-1) {
@@ -83,7 +77,7 @@ public class SortState implements GoalTest, StepCostFunction, HeuristicFunction,
  		else return Integer.MAX_VALUE;
 	}
 
-	/* Applico l'azione sullo stato, cioè faccio swap di 2 interi non ordinati */
+	/* Swap of 2 unordered integers */
 	public SortState applyAction(int index1, int index2, int[] mArray) {
 		
 		try {

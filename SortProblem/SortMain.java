@@ -11,7 +11,7 @@ import aima.search.informed.*;
 public class SortMain {
 	public static void main(String[] args) {
 
-		/* Vettore iniziale da ordinare */
+		/* initial array to sort (is just an example, use one of your choice) */
 		int[] array = new int[]{-9,5,2,10,6,89,-6,87,1,3,55,-20,0};
 
 		System.out.println("==========INIZIO ESECUZIONE PROGRAMMA==========");
@@ -25,6 +25,7 @@ public class SortMain {
 										initState,
 										initState);
 
+			/* Search strategy */
 			Search search = new AStarSearch(new GraphSearch());
 			SearchAgent agent = new SearchAgent(problem, search);
 			printActions(agent.getActions());
